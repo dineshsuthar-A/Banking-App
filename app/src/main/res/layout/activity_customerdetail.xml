@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customerdetail">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/customerdetail_toolbar"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/imgback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:layout_marginVertical="13dp"
+                    android:background="@drawable/bluebackbtn"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:text="CUSTOMER DETAIL"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="24dp"
+                    android:textColor="#03A9F4"
+                    tools:ignore="RtlCompat">
+
+
+                </TextView>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:text="Account Number"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+            <TextView
+                android:id="@+id/detailAccountNumber"
+                android:layout_width="0dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="account no."
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="Customer Name"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+            <TextView
+                android:id="@+id/detailCustomerName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:text="Name"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="@color/white"
+
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Date of Birth"
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/detailDob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:text="DOB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:text="Balance"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/detailBalance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:layout_weight="10"
+                android:background="@color/white"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                android:text="balance" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/transactionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_weight="20"
+        android:text="Transfer Money"
+        android:background="@color/white"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
